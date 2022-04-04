@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern website lamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contamporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+
+        <div class="text-container">
+            <h1>Latest <br> in lighting</h1>
+            <p>Even a single lamp dispels the deepest darkness.</p>
+            <a href="">Check all collection</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- footer  -->
+
+    <!-- About section  -->
+    <div class="about">
+        <h2>About light</h2>
+        <p>Light thinks it travels faster than anything but it is wrong. No matter how fast light travels, it finds the
+            darkness has always got there first, and is waiting for it.” “To shine your brightest light is to be who you
+            truly are.</p>
+    </div>
+
+    <!-- copyright section  -->
+    <div class="copyright">
+        <p>Copyright © 2022, Light-House pvt ltd</p>
+    </div>
+
+    <!-- js  -->
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+        function toggleBtn() {
+            btn.classList.toggle("active")
+            light.classList.toggle("on")
+        }
+    </script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
